@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-[#F9F6E2]">
+      <div
+        class="lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between"
+      >
+        <div class="text-center order-2 lg:order-1 mt-6 lg:mt-0">
+          <h3 class="text-xl md:text-3xl font-[500] mb-2 md:mb-10">
+            ---SALE FEVER---
+          </h3>
+          <h1
+            class="text-2xl md:text-5xl font-bold mb-6 md:mb-14 leading-tight"
+          >
+            Purchase TK 200 or <br />
+            above & get <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <div
+            class="flex items-center gap-4 justify-center mb-6 md:mb-10 lg:mb-0"
+          >
+            <p class="md:font-[500] md:text-2xl">Use Promo Code</p>
+            <button
+              onclick="promoCodeBtn()"
+              class="btn btn-secondary md:text-2xl md:font-[600]"
+            >
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img class="w-full" src="./images/Summer 1.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main class="bg-[#F8F8F8] py-28">
+      <!-- container -->
+      <div
+        class="lg:max-w-7xl px-3 lg:px-0 mx-auto flex flex-col md:flex-row gap-6"
+      >
+        <!-- products -->
+        <div class="flex-1">
+          <h2 class="text-4xl font-[600] mb-8">Kitchenware</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div id="product1" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod1.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product1-name">
+                  K. Accessories
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product1-price">39.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product2" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod2.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product2-name">
+                  K. Accessories
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product2-price">25.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product3" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod3.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product3-name">
+                  Home Cooker
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product3-price">49.00</span> TK
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-4xl font-[600] mb-8 mt-14">Sportswear</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div id="product4" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod4.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product4-name">
+                  Sports Back Cap
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product4-price">49.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product5" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod5.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product5-name">
+                  Full Jersey Set
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product5-price">69.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product6" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod6.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product6-name">
+                  Sports cates
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product6-price">159.00</span> TK
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-4xl font-[600] mb-8 mt-14">Furniture</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div id="product7" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod7.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+
+                  <i class="fa-regular fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product7-name">
+                  Single Relax Chair
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product7-price">185.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product8" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod8.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product8-name">
+                  Children play
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product8-price">299.00</span> TK
+                </p>
+              </div>
+            </div>
+            <div id="product9" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
+              <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
+                <img src="./images/prod9.png" alt="Shoes" />
+              </div>
+              <div class="text-center bg-[#fff]">
+                <div class="mt-5 flex justify-center">
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                </div>
+                <h2 class="text-xl font-[600] my-2" id="product9-name">
+                  Flexible Sofa
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product9-price">339.00</span> TK
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- price calculation area -->
+        <div class="max-w-[500px] mt-[72px]">
+          <div class="bg-[#fff] p-2 md:p-6 rounded-lg">
+            <h2 class="text-2xl font-[500]">Have coupon?</h2>
+            <div class="join mt-4">
+              <input
+                id="coupon-field"
+                class="border rounded-l-lg join-item outline-0 text-[#11111166] ps-4"
+                placeholder="Coupon code"
+              />
+              <button
+                id="apply"
+                class="btn btn-secondary join-item rounded-r-lg text-white capitalize"
+                disabled
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="bg-[#fff] p-6 rounded-lg mt-6">
+            <div id="product-list"></div>
+            <div
+              class="my-6 conditional-border"
+              style="border-bottom: 1px solid #11111126"
+            ></div>
+            <div>
+              <h2 class="text-xl font-[500] mb-2">
+                Total price:
+                <span id="total-price" class="text-[#11111180]">0.00</span
+                ><span class="text-[#11111180]">TK</span>
+              </h2>
+              <h2 class="text-xl font-[500] mb-2">
+                Discount:
+                <span class="text-[#11111180]" id="discount">0.00</span
+                ><span class="text-[#11111180]">TK</span>
+              </h2>
+              <h2 class="text-xl font-[500] mb-2">
+                Total: <span class="text-[#11111180]" id="total">0.00</span
+                ><span class="text-[#11111180]">TK</span>
+              </h2>
+              <div
+                class="my-6"
+                style="border-bottom: 1px solid #11111126"
+              ></div>
+              <button
+                onclick="my_modal_5.showModal()"
+                id="make-purchase"
+                class="btn btn-secondary w-full text-white text-xl"
+                disabled
+              >
+                Make Purchase
+              </button>
+              <!-- modal  -->
+              <!-- Open the modal using ID.showModal() method -->
+
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle px-2 lg:px-0"
+              >
+                <form method="dialog" class="modal-box text-center">
+                  <img class="mx-auto" src="./images/congo.png" alt="" />
+                  <h3 class="font-bold text-3xl mt-10 mb-4">Congratulations</h3>
+                  <p class="mb-10 text-[#11111180]">
+                    You have Purchased the product
+                  </p>
+                  <div class="text-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      onclick="goHome()"
+                      class="btn btn-secondary text-white"
+                    >
+                      Go Home
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
